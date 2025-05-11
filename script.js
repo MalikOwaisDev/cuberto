@@ -13,13 +13,14 @@ gsap.to(".fleftelm", {
     start: "top top",
     end: "bottom bottom",
     pin: true,
+    markers: true,
     endTrigger: ".last",
     scrub: 0.5,
   },
   y: "-300%",
   ease: Power1,
 });
-
+ScrollTrigger.refresh();
 let sections = document.querySelectorAll(".fleftelm");
 
 Shery.imageEffect(".images", {
